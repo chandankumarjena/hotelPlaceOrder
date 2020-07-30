@@ -69,7 +69,7 @@ public class PlaceOrderControllerTest {
 	public void testPlaceOrder_whenHotelNameIsNull_returnBadRequest() throws Exception{
 		
 		String exampleHotelJson =
-				"{\"hotelName\":null,\"checkInDate\":\"2020-08-31\",\"checkOutDate\":\"2020-09-07\",\"totalAmount\":12000,\"customers\":[{\"name\":\"chandan3\",\"email\":\"chandan3@gmail.com\",\"number\":\"9938161801\"}],\"rooms\":[{\"roomName\":\"sahid\",\"numberOfGuest\":4}]}";	
+				"{\"hotelName\":null,\"checkInDate\":\"2020-08-13\",\"checkOutDate\":\"2020-09-07\",\"totalAmount\":12000,\"customers\":[{\"name\":\"chandan3\",\"email\":\"chandan3@gmail.com\",\"number\":\"9938161801\"}],\"rooms\":[{\"roomName\":\"sahid\",\"numberOfGuest\":4}]}";	
 	
 		RequestBuilder requestBuilder = MockMvcRequestBuilders
 				.post("/api/placeOrders")
